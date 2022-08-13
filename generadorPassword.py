@@ -8,15 +8,15 @@ def generar_contraseña():
     #convierto a listas mis strings
     mayusculas = list(mayusculas)
     minusculas = list(minusculas)
-    caracteres = mayusculas + minusculas + simbolos + numeros
+    caracters = mayusculas + minusculas + simbolos + numeros
 
-    contrasena = []
+    password = []
     for i in range(8):
-        caracter_ramdom = random.choice(caracteres)
-        contrasena.append(caracter_ramdom)
-    contrasena = ''.join(contrasena)
+        caracter_ramdom = random.choice(caracters)
+        password.append(caracter_ramdom)
+    password = ''.join(password)
     
-    print(contrasena)
+    print(password)
 
 def run():
     generar_contraseña()
